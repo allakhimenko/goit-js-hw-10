@@ -9,6 +9,6 @@ var e,t=arguments[3];!function(t,r){"object"==typeof exports&&"object"==typeof m
 },{"handlebars/dist/handlebars.runtime":"pAws"}],"clu1":[function(require,module,exports) {
 
 },{}],"Focm":[function(require,module,exports) {
-"use strict";require("./menu.json"),require("./template/markup.hbs"),require("./sass/main.scss");const e={LIGHT:"light-theme",DARK:"dark-theme"};
+"use strict";var e=s(require("./menu.json")),t=s(require("./template/markup.hbs"));function s(e){return e&&e.__esModule?e:{default:e}}require("./sass/main.scss");const c={LIGHT:"light-theme",DARK:"dark-theme"},a=document.querySelector("body"),r=document.querySelector(".js-menu"),l=document.querySelector("#theme-switch-toggle"),u=e.default.map(t.default).join("");r.insertAdjacentHTML("afterBegin",u);const n=localStorage.getItem("currentTheme");function o(){a.classList.value,c.LIGHT,a.classList.toggle(c.DARK),a.classList.toggle(c.LIGHT),localStorage.setItem("currentTheme",a.classList.value)}n===c.DARK?(l.checked=!0,a.classList.add(c.DARK)):(l.checked=!1,a.classList.add(c.LIGHT)),l.addEventListener("change",o);
 },{"./menu.json":"mA8c","./template/markup.hbs":"lbYf","./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-10/src.489505f1.js.map
+//# sourceMappingURL=/goit-js-hw-10/src.97ff85bb.js.map
